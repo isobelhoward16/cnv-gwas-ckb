@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # Checks that every input needed by stage 1 exists and has the expected format.
-# Quick; safe to run on a login node. Prints no sample IDs.
+# Quick; safe to run on a login node. Prints no sample IDs or call records.
 source("R/config.R"); source("R/callset_utils.R")
 cfg <- load_config(); pa <- cfg$paths; ok <- TRUE
 say <- function(pass, what, detail = "") { cat(sprintf("  [%s] %s %s\n", if (pass) " OK " else "FAIL", what, detail)); if (!pass) ok <<- FALSE }
@@ -20,7 +20,7 @@ say(length(files) > 0, "batch files", length(files))
 say(!anyDuplicated(basename(files)), "batch file names unique")
 rp <- sub("_cnv_calls_batch.*$", "", basename(files))
 say(uniqueN(rp) == 20, "region_phase groups", uniqueN(rp))
-cat("  first line of first batch file (sample ID removed):\n  ", gsub("CK[0-9]+", "CKxxxx", readLines(files[1], n = 1)), "\n")
+say(length(strsplit(readLines(files[1], n = 1), "[[:space:]]+")[[1]]) >= 8, "first batch file has the PennCNV call format")
 
 cat("\nSample QC summary:\n")
 qc <- fread(pa$master_qc_summary, sep = "\t", nrows = 5)
