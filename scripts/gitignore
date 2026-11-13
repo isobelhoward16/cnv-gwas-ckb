@@ -1,0 +1,16 @@
+# Real configuration, data, results and logs are never committed
+config/paths.yaml
+calling/config.local.sh
+results/
+data/
+logs/
+*.log
+*.out
+*.err
+*.rds
+*.RData
+*.rda
+*.tmp
+*_ckids.txt
+.Rhistory
+Rplots.pdf
