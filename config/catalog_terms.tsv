@@ -1,0 +1,36 @@
+# Table S3: exact GWAS Catalog reported trait names used to identify trait-matched associations for each phenotype.
+# One row per phenotype x name. Phenotype names as in config/pipeline.yaml without the _rint suffix.
+# Names are matched to the Catalog 'trait' column exactly (case-insensitive, surrounding spaces ignored).
+# sitting_height_mm and bmi_at_25 have no Catalog trait of their own: height and BMI are used as the closest traits.
+phenotype	catalog_trait
+bmi_calc	Body mass index
+bmi_calc	BMI
+bmi_at_25	Body mass index
+bmi_at_25	BMI
+weight_kg	Weight
+standing_height_mm	Height
+standing_height_mm	Adult body size
+sitting_height_mm	Height
+sitting_height_mm	Adult body size
+waist_mm	Waist circumference
+waist_mm	Waist-hip ratio
+hip_mm	Hip circumference
+hip_mm	Waist-hip ratio
+waist_hip_ratio	Waist-hip ratio
+fat_percent	Body fat percentage
+fat_percent	Body fat mass
+fat_percent	Fat body mass
+sbp_mean	Systolic blood pressure
+sbp_mean	Blood pressure
+dbp_mean	Diastolic blood pressure
+dbp_mean	Blood pressure
+heart_rate_mean	Heart rate
+heart_rate_mean	Resting heart rate
+heart_rate_mean	Pulse rate
+heart_rate_mean	Heart rate response to exercise
+random_glucose	Random glucose levels
+random_glucose	Glucose levels
+random_glucose	Blood glucose levels
+random_glucose	Blood sugar levels
+random_glucose	Fasting glucose
+random_glucose	Fasting blood glucose

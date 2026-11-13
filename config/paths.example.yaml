@@ -1,0 +1,27 @@
+# Copy to config/paths.yaml (not committed) and give the real locations.
+results_root: /path/to/cnv-gwas-ckb/results
+# stage 1
+penncnv_dir: /path/to/PennCNV-1.0.5
+raw_calls_dir: /path/to/penncnv_calls            # folder with *_cnv_calls_batch_*.txt files
+master_qc_summary: /path/to/master_qcsum.txt     # PennCNV QC summary: CKID, LRR_SD, BAF_drift, WF, region_phase
+refgene: /path/to/hg19_refGene.txt
+reflink: /path/to/hg19_refLink.txt
+# stage 2
+array1_key: /path/to/array1_key.txt          # sample IDs on Axiom CKB1 (phase 1-2)
+array2_key: /path/to/array2_key.txt          # sample IDs on Axiom CKB2 (phase 3)
+probe_map_phase12: /path/to/phase12.map      # PLINK map: chr, probe_id, genetic distance, position
+probe_map_phase3: /path/to/phase3.map
+# stages 3-4
+phenotype_rds: /path/to/analysis_dataframe.rds   # phenotypes, covariates, gwas_array_type, unrelated flag
+qc_gwas_file: /path/to/qc_merged_with_master_key.txt   # per-sample CNV QC metrics (GID, LRR_SD, WF, BAF_drift, NumCNV)
+# stage 5
+gtf_gencode_v19: /path/to/gencode.v19.annotation.gtf.gz
+cytoband_hg19: /path/to/cytoBand.txt
+# stage 7
+gwas_catalog: /path/to/hg19_gwasCatalog.txt      # UCSC/ANNOVAR GWAS Catalog table (Table S3 and CNVR look-ups)
+ukb_auwerx_dir: /path/to/auwerx_2022            # Auwerx et al. 2022 SD1 (frequencies) and SD3-SD5 (summary statistics)
+segdups_hg19: /path/to/genomicSuperDups.txt.gz   # UCSC hg19 table
+# stage 8
+phenotype_csv: /path/to/analysis_dataframe.csv          # same data as phenotype_rds, as csv
+refgene_annotation: /path/to/hg19_refGene.txt           # exonic and genic annotation (Table S4)
+cytoband_landscape: /path/to/cytoBand.txt               # Figure 2 labels

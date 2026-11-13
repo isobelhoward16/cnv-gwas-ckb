@@ -1,0 +1,40 @@
+item	source_glob	paper_name	note
+Figure 1	08_descriptive/{ver}/results/figures/main/Fig_burden_basics_main_composite.png	Figure_1.png	
+Figure 2	08_descriptive/{ver}/results/figures/main/Fig_cnv_density_mirrorplot_500kb_no_grid_overall.png	Figure_2.png	
+Figure 2 (pdf)	08_descriptive/{ver}/results/figures/main/Fig_cnv_density_mirrorplot_500kb_no_grid_overall.pdf	Figure_2.pdf	
+Figure 3	09_figures/{ver}/Fig3_cytoband_association_summary_unpruned_no14q.png	Figure_3.png	
+Figure 3 (pdf)	09_figures/{ver}/Fig3_cytoband_association_summary_unpruned_no14q.pdf	Figure_3.pdf	
+Figure 4A	09_figures/{ver}/zooms/16p11_stacked_pubstyle_twocolour.png	Figure_4A.png	
+Figure 4B	09_figures/{ver}/boxplots/unpruned_related_withpoints/boxplot_bmi_calc_rint_mirror_chr16_*.png	Figure_4B.png	BMI, mirror, 16p11.2 BP2-BP3
+Figure 4C	09_figures/{ver}/boxplots/unpruned_related_withpoints/boxplot_fat_percent_rint_mirror_chr16_*.png	Figure_4C.png	fat %, mirror, 16p11.2 BP4-BP5
+Figure 5A	09_figures/{ver}/zooms/1q21_1_standing_height_mirror_stacked_pubstyle.png	Figure_5A.png	1q21.1 distal, standing height, mirror model (Table 1 model)
+Figure 5B	09_figures/{ver}/boxplots/unpruned_related_withpoints/boxplot_standing_height_mm_rint_mirror_chr1_*.png	Figure_5B.png	
+Figure 5C	09_figures/{ver}/zooms/8p23_1_random_glucose_del_stacked_pubstyle.png	Figure_5C.png	8p23.1, random plasma glucose, deletion model
+Figure 5D	09_figures/{ver}/boxplots/unpruned_related_withpoints/boxplot_random_glucose_rint_deletion_chr8_*.png	Figure_5D.png	
+Figure S1 counts	08_descriptive/{ver}/tables/flowchart_counts.txt	Figure_S1_counts.txt	numbers in the Figure S1 flowchart
+Figure S3	09_figures/{ver}/array_checks/pooling_forest.png	Figure_S3.png	
+Figure S4	09_figures/{ver}/array_checks/pooling_sig_carrier_counts.png	Figure_S4.png	
+Figure S5	09_figures/{ver}/array_checks/pooling_interaction.png	Figure_S5.png	
+Figure S6	08_descriptive/{ver}/results/figures/supp/SFig_pathogenic_ckb_vs_ukb_log2_foldchange_nonzero.png	Figure_S6.png	
+Figure S6 (pdf)	08_descriptive/{ver}/results/figures/supp/SFig_pathogenic_ckb_vs_ukb_log2_foldchange_nonzero.pdf	Figure_S6.pdf	
+Figure S7	06_followup/{ver}/unrelated_leads/sensitivity_unrelated_scatter.png	Figure_S7.png	
+Table 1	10_paper/{ver}/table1.csv	Table_1.csv	
+Table 1 (numeric)	10_paper/{ver}/table1_numeric.csv	Table_1_numeric.csv	unformatted values behind Table 1
+Table 1 carriers	10_paper/{ver}/table1_carriers_both_types.csv	Table_1_carriers_both_types.csv	deletion and duplication carriers at every lead probe
+Table S1	10_paper/{ver}/table_s1_exclusion_regions.csv	Table_S1.csv	
+Table S2	08_descriptive/{ver}/tables/table_s2_population.csv	Table_S2.csv	
+Table S3	07_external/{ver}/catalog/table_s3_catalog_terms_by_phenotype.csv	Table_S3.csv	
+Table S3 (per name)	07_external/{ver}/catalog/table_s3_catalog_terms_long.csv	Table_S3_long.csv	formatted Table S3 built from this
+Table S4	08_descriptive/{ver}/results/tables/main/Table_pathogenic_ckb_vs_ukb.tsv	Table_S4.tsv	
+Table S5	10_paper/{ver}/table_s5_single_type.csv	Table_S5.csv	formatted Excel built from this
+Table S6	10_paper/{ver}/table_s6_mirror.csv	Table_S6.csv	formatted Excel built from this
+Table S5/S6 thresholds	10_paper/{ver}/table_s5_s6_thresholds.csv	Table_S5_S6_thresholds.csv	caption thresholds
+Table S7	07_external/{ver}/ukb/table_s7_cnvr_freq_ckb_vs_ukb.csv	Table_S7.csv	
+Table S8	07_external/{ver}/ukb/table_s8_ukb_lookup.csv	Table_S8.csv	
+Table S9	06_followup/{ver}/unrelated_leads/table_s9_unrelated_sensitivity.csv	Table_S9.csv	
+Catalog counts	07_external/{ver}/catalog/catalog_counts_summary.csv	Text_catalog_counts.csv	GWAS Catalog SNPs near each CNVR (Results, Discussion)
+Segmental duplications	07_external/{ver}/segdups/segdup_by_locus.csv	Text_segdup_by_locus.csv	segmental-duplication context of each locus
+Manuscript numbers	10_paper/{ver}/manuscript_numbers.csv	Text_manuscript_numbers.csv	every number quoted in the text, with its source
+Text support: loci	10_paper/{ver}/text_support_loci.csv	Text_support_loci.csv	genes and unadjusted trait means per association (Results text)
+Text support: look-ups	10_paper/{ver}/text_support_lookups.csv	Text_support_lookups.csv	glucose, SBP, DBP at the 16p11.2 BP2-BP3 lead probe
+Text: landscape numbers	10_paper/{ver}/landscape_numbers.csv	Text_landscape_numbers.csv	CNV landscape paragraphs and BMI SD (Results, Discussion)

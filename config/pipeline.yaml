@@ -1,0 +1,50 @@
+# Analysis settings. Paths to the input data are in config/paths.yaml (see paths.example.yaml).
+callset_version: v3          # label of the callset, used in the results/ folder names
+
+merge:
+  enabled: true
+  gap_fraction: 0.2          # merge when gap / span of the merged call <= 0.2
+  numsnp_rule: sum           # NumSNP of a merged call: sum over fragments
+  conf_rule: max             # Conf of a merged call: maximum over fragments
+
+cnv_filter:
+  min_conf: 20
+  min_snps: 10
+  min_length: 10000          # 10 kb
+  max_length: 10000000       # 10 Mb
+  exclusion_min_fraction: 0.5   # remove a call when >= 50% of its length lies in one exclusion region
+
+exclusion_regions_file: config/exclusion_regions_hg19.txt   # 70 regions; immune-receptor loci in hg19
+
+sample_qc:
+  max_lrr_sd: 0.35
+  max_baf_drift: 0.01
+  max_wf: 0.05
+  max_cnv: 100               # samples with more calls than this after filtering are removed
+
+# ---- stages 3-4 (Meff and GWAS) ----
+analysis:
+  models: [deletion, duplication, mirror]
+  phenotypes:                # the 13 traits analysed (Table S2)
+    - bmi_calc_rint
+    - bmi_at_25_rint
+    - standing_height_mm_rint
+    - sitting_height_mm_rint
+    - weight_kg_rint
+    - waist_mm_rint
+    - hip_mm_rint
+    - waist_hip_ratio_rint
+    - fat_percent_rint
+    - sbp_mean_rint
+    - dbp_mean_rint
+    - heart_rate_mean_rint
+    - random_glucose_rint
+  relatedness: [all, unrelated]
+  min_carriers: 15           # deletion/duplication: value 1; mirror: value != 0 (GWAS and Meff alike)
+  simplem_target_variance: 0.995
+  n_effective_traits: 11     # experiment-wide threshold = 0.05 / (Meff x 11)
+  rint: precomputed          # precomputed = use the *_rint columns; recompute = re-RINT within each analysis sample
+
+# ---- stage 8 (descriptive) ----
+descriptive:
+  density_bin_size: 500000     # Figure 2 bin size
